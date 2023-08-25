@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad_background"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            style="@style/backButton"
+            android:contentDescription="@string/back" />
+
+        <Space style="@style/spacer" />
+
+        <ImageView
+            android:id="@+id/btnHome"
+            style="@style/backButton"
+            android:contentDescription="@string/erase"
+            android:src="@drawable/ic_home" />
+
+    </LinearLayout>
+
+    <Space style="@style/spacer" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_margin="40dp"
+        android:layout_weight="1"
+        android:src="@drawable/offline1"
+        />
+
+    <Space style="@style/spacer" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAgain"
+        style="@style/mainButton"
+        android:text="@string/ok"
+        android:layout_margin="20dp"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

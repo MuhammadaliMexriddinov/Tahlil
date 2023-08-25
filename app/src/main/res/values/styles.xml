@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="textViewTest">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginBottom">@dimen/spaceMini</item>
+    </style>
+
+    <style name="spacer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="editTextTest">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:inputType">number</item>
+        <item name="android:padding">14dp</item>
+        <item name="android:hint">0</item>
+        <item name="android:maxLength">8</item>
+        <item name="android:textAlignment">textEnd</item>
+        <item name="android:background">@drawable/edit_text</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/blue2</item>
+        <item name="android:layout_marginBottom">@dimen/space</item>
+    </style>
+
+    <style name="mainButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">54dp</item>
+        <item name="android:background">@drawable/button_main</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="menuButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:background">@drawable/button_main</item>
+        <item name="android:textStyle">bold</item>
+        <item name="layout_constraintDimensionRatio">8:7</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:drawablePadding">1dp</item>
+        <item name="android:lines">1</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="backButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">?android:selectableItemBackgroundBorderless</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:src">@drawable/ic_back</item>
+    </style>
+
+    <style name="editTextTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/aboutApp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+</resources>

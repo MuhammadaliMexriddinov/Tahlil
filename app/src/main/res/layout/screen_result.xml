@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            style="@style/backButton"
+            android:contentDescription="@string/back" />
+
+        <Space style="@style/spacer" />
+
+        <ImageView
+            android:id="@+id/btnHome"
+            style="@style/backButton"
+            android:contentDescription="@string/erase"
+            android:src="@drawable/ic_home" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:paddingBottom="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:text="@string/yourResult"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:paddingHorizontal="20dp"
+        android:layout_gravity="center"
+        android:text="@string/resultFullText"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:textAllCaps="true"
+        android:textSize="11sp"
+        android:paddingTop="16dp"
+        android:paddingBottom="6dp"
+        android:text="@string/param6"
+        android:textAlignment="center" />
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/lineChart"
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/white"
+        android:backgroundTintMode="src_atop"
+        android:layout_height="0dp"
+        android:padding="8dp"
+        android:layout_weight="10" />
+
+    <Space style="@style/spacer" />
+
+    <CheckBox
+        android:id="@+id/btnCheck1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:buttonTint="@color/blue"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="50dp"
+        android:text="@string/potentialInfected" />
+
+    <CheckBox
+        android:id="@+id/btnCheck2"
+        android:layout_width="match_parent"
+        android:textColor="@color/white"
+        android:buttonTint="@color/blue"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="50dp"
+        android:checked="true"
+        android:text="@string/infected" />
+
+    <CheckBox
+        android:id="@+id/btnCheck3"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/blue"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="50dp"
+        android:text="@string/recovered" />
+
+    <Space style="@style/spacer" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAgain"
+        style="@style/mainButton"
+        android:text="@string/again"
+        android:layout_margin="20dp"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

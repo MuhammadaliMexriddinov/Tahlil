@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ViewFlipper
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:autoStart="true"
+        android:flipInterval="2000"
+        android:inAnimation="@android:anim/slide_in_left"
+        android:outAnimation="@android:anim/slide_out_right"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:contentDescription="slider1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/slider_1" />
+
+        <ImageView
+            android:contentDescription="slider2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/slider_2" />
+
+        <ImageView
+            android:contentDescription="slider3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/slider_3" />
+    </ViewFlipper>
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        app:layout_constraintBottom_toBottomOf="@id/slider" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/back_main_screen"
+        android:rotation="180"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textAllCaps="true"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintLeft_toLeftOf="@id/view"
+        app:layout_constraintRight_toRightOf="@id/view"
+        app:layout_constraintTop_toTopOf="@id/view" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/back_main_screen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@id/space" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnTest"
+        style="@style/menuButton"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginTop="@dimen/marginHalf"
+        android:layout_marginEnd="@dimen/marginHalf"
+        app:cardCornerRadius="12dp"
+        android:layout_marginBottom="@dimen/marginHalf"
+        android:drawableTop="@drawable/ic_laboratory"
+        android:text="@string/test"
+        app:layout_constraintBottom_toTopOf="@+id/btnApp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btnAbout"
+        app:layout_constraintTop_toBottomOf="@id/slider" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAbout"
+        style="@style/menuButton"
+        android:layout_marginStart="@dimen/marginHalf"
+        android:layout_marginTop="@dimen/marginHalf"
+        android:layout_marginEnd="@dimen/margin"
+        android:layout_marginBottom="@dimen/marginHalf"
+        android:drawableTop="@drawable/ic_training"
+        android:text="@string/about"
+        app:layout_constraintBottom_toTopOf="@+id/btnLang"
+        app:layout_constraintLeft_toRightOf="@id/btnTest"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/slider" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnApp"
+        style="@style/menuButton"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginTop="@dimen/marginHalf"
+        android:layout_marginEnd="@dimen/marginHalf"
+        android:layout_marginBottom="@dimen/marginHalf"
+        android:drawableTop="@drawable/ic_calling"
+        android:text="@string/aboutApp"
+        app:layout_constraintBottom_toTopOf="@id/btnFaq"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btnLang"
+        app:layout_constraintTop_toBottomOf="@id/btnTest" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLang"
+        style="@style/menuButton"
+        android:layout_marginStart="@dimen/marginHalf"
+        android:layout_marginTop="@dimen/marginHalf"
+        android:layout_marginEnd="@dimen/margin"
+        android:layout_marginBottom="@dimen/marginHalf"
+        android:drawableTop="@drawable/ic_translate"
+        android:text="@string/language"
+        app:layout_constraintBottom_toTopOf="@id/btnExit"
+        app:layout_constraintLeft_toRightOf="@id/btnApp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnAbout" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnFaq"
+        style="@style/menuButton"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginTop="@dimen/marginHalf"
+        android:layout_marginEnd="@dimen/marginHalf"
+        android:layout_marginBottom="@dimen/margin"
+        android:drawableTop="@drawable/ic_faq"
+        android:text="@string/faq"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btnExit"
+        app:layout_constraintTop_toBottomOf="@id/btnApp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnExit"
+        style="@style/menuButton"
+        android:layout_marginStart="@dimen/marginHalf"
+        android:layout_marginTop="@dimen/marginHalf"
+        android:layout_marginEnd="@dimen/margin"
+        android:layout_marginBottom="@dimen/margin"
+        android:drawableTop="@drawable/ic_exit"
+        android:text="@string/exit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/btnFaq"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnLang" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

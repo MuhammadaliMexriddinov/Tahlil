@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Tahlil</string>
+    <string name="test">TAKE THE TEST</string>
+    <string name="about">ABOUT THE PROJECT</string>
+    <string name="faq">QUESTIONS AND ANSWERS</string>
+    <string name="contacts">CONTACTS</string>
+    <string name="result">GET RESULT</string>
+    <string name="param1">Infection rate</string>
+    <string name="param2">Recovery rate</string>
+    <string name="param3">Total population</string>
+    <string name="param4">Number of people initially infected</string>
+    <string name="param5">Number of people who initially recovered</string>
+    <string name="param6">Time interval</string>
+    <string name="_0_00001">0.00001</string>
+    <string name="_1">1</string>
+    <string name="again">Calculate again</string>
+    <string name="back">Back</string>
+    <string name="erase">Erase</string>
+    <string name="about1">\t To analyze and model the development of an epidemic situation, the SIR model is widely used in practice, based on the division of the population into three groups: S - susceptible (Susceptible), I - infected (Infectious) and R - immune (Removed): N = S + I + R, where N is the total population.</string>
+    <string name="about2">\t The application allows you to build a methodology for choosing initial data and system parameters for modeling the spread of an epidemic in a closed society.</string>
+    <string name="about3Title">Basic Facts</string>
+    <string name="about3">\t The SIR model is a kind of compartmental model that describes the dynamics of infectious diseases. One wonders why the SIR model is called the "compartmental model".\n In this model, the population is divided into groups. Each group is expected to have the same characteristics, and it turns out that the SIR model represents three branches, segmented by model:\n ● Susceptible - healthy individuals that are at risk and can catch the infection;\n ● Infectious - infected individuals ; are carriers of the infection;\n ● Recovered - "retired" individuals, which include recovered individuals that have acquired immunity to this disease, as well as dead ones. \n "Susceptible" refers to the group of people most vulnerable to disease after contact with infected people. At the time of infection, they may already be sick or have some kind of chronic disease. The "infected" group represents people already infected with the infection. They can transmit the disease to a group of susceptible people and may recover over time. Recovered patients acquire immunity, because. they are no longer affected by the disease.\n The SIR model is a framework that describes how the number of people in each group changes over time.\n The SIR model makes it possible to describe the number of people in each group using an ordinary differential equation.</string>
+    <string name="faqHeader">FAQ</string>
+    <string name="faqText1">The SIR model (Susceptible-Infected-Recovered) is the basic compartmental model commonly used in the epidemiology of infectious diseases. The population is divided into three parts: susceptible, infected and recovered, and transmission parameters are indicated, which determine the rate of transition of people between The SIR model here has a simple deterministic structure, and the transmission parameters are either specified based on the provided reference values (hover over the cell with the reference value to view source information) or entered by the user.\n The input parameters are obtained through consultation with expert groups or are taken from peer-reviewed journals and reference databases.The main input parameters are listed below.\n o Infectious period: The average number of days that an infected person can transmit the virus to susceptible people.Changing this parameter can have a large impact on the predicted epidemiological curve. Consultation with an infectious disease epidemiologist is recommended to properly estimate this parameter.\n o Current cumulative number of no longer infectious cases (recovered or deceased): The total number of cases that are no longer infectious is used in the SIR model to estimate the initial number of infectious cases. cases by subtracting those who are no longer contagious from the total cumulative number of cases. If this parameter is not known, the cumulative number of cases per infectious period until today can be used.\n o Current contacts per person per day: The average number of people that one infected person encounters per day. Country-specific reference values are provided based on a study in which exposure, according to the working definition, is either physical or non-physical contact.\n o Probability of infection per contact: The average probability or risk of infecting a susceptible person upon contact with an infected person.\n o Reproduction rate: Average number of secondary infections due to one infection. At the initial stage of SIR, the base reproduction number is estimated at 2.35.\n o The transmission parameters are related to each other by the following formula. Thus, by specifying any three parameters, we can get the fourth.\n ▪ Reproduction number = (Infectious period) × (Number of contacts per person per day) × (Probability of infection per contact).\n • Users can change SIR parameters over time, highlighting up to five different periods (stages). Each stage is defined by a start date and an expected number of or the number of contacts per person per day.\n • After selecting the transfer input parameters, you can view the SIR model data in the SIR Model Patient Calcs tab, but you do not need to enter additional data here."</string>
+    <string name="faqText2">\t Inputs are obtained through consultation with expert groups or from peer-reviewed journals and reference databases. The main inputs are listed below.\n o Infectious period: The average number of days that an infected person can transmit the virus to susceptible people. Changing this setting can have a large impact on the predicted epidemiological curve.In order to correctly estimate this parameter, it is recommended to consult with an infectious disease epidemiologist.\n o Current cumulative number of no longer infectious cases (recovered or deceased): the total number of cases that are no longer infectious is used in the SIR model to estimate the initial number of infectious cases by subtracting those who are no longer infectious from the total cumulative number of cases.If this parameter is not known, the cumulative number of cases per infectious period up to today can be used.\n o Current number of contacts per person per day: the average number of people an infected person encounters per day. Country-specific reference values are provided based on a study in which exposure, according to the working definition, is either physical or non-physical contact.\n o Probability of infection per contact: The average probability or risk of infecting a susceptible person upon contact with an infected person.\n o Reproduction rate: Average number of secondary infections due to one infection. At the initial stage of SIR, the base reproduction number is estimated at 2.35.\n o The transmission parameters are related to each other by the following formula. Thus, by specifying any three parameters, we can get the fourth.\n ▪ Reproduction number = (Infectious period) × (Number of contacts per person per day) × (Probability of infection per contact).\n • Users can change SIR parameters over time, highlighting up to five different periods (stages). Each stage is determined by the start date and the expected number of reproductions or contacts per person per day.\n no additional data is required here.</string>
+    <string name="exit">Exit</string>
+    <string name="potentialInfected">Potentially infected</string>
+    <string name="infected">Infected</string>
+    <string name="recovered">Recovered</string>
+    <string name="aboutApp">About the application</string>
+    <string name="language">Language</string>
+    <string name="yourResult">Your result</string>
+    <string name="resultFullText">Analytical model for forecasting epidemics of infectious diseases</string>
+    <string name="days">Days</string>
+    <string name="aboutProject">About the project</string>
+    <string name="appHeader">About the application</string>
+    <string name="follow">Follow us</string>
+    <string name="anyQuestion">Do you have any questions?</string>
+    <string name="sentToUs">Write to us and we will answer you.</string>
+    <string name="name">name</string>
+    <string name="email">email</string>
+    <string name="theme">theme</string>
+    <string name="message">message</string>
+    <string name="send">send via email</string>
+    <string name="ok">OK</string>
+    <string name="version">Version 1.0.1</string>
+    <string name="appInfo1">t In simple terms, this application is an analytics software. With this application, you can develop analytical conclusions about the spread of a disease or poisoning over a certain period of time. The app uses various images and icons from icons8.com.</string>
+    <string name="appInfo2">\t This application is developed by the Center for Advanced Technologies and Strategic Initiatives (CATSI) of the Tashkent Institute of Pediatric Medicine.\nThe main goal of the ATSI Center is the introduction and systematic development of new modern advanced digital technologies and telecommunications in the management, administrative and educational process using advanced international digital technologies. Another main task of the center is to conduct research in the field of medicine and advanced technologies, including artificial intelligence, biotechnology and big data databases, prepare analytical and strategic documents, and implement international practice projects.</string>
+    <string name="appInfo3">\t You can learn more about CATSI, its activities, as well as many of our other projects through the links below.</string>
+</resources>

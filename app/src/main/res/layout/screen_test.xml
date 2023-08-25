@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad_background"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:padding="20dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_vertical">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            style="@style/backButton"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:contentDescription="@string/back" />
+
+        <ImageView
+            android:id="@+id/btnErase"
+            style="@style/backButton"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/erase"
+            android:src="@drawable/ic_delete" />
+
+        <TextView
+            android:id="@+id/txt1"
+            style="@style/textViewTest"
+            android:layout_below="@id/btnBack"
+            android:text="@string/param1" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/param1"
+            style="@style/editTextTest"
+            android:layout_below="@id/txt1"
+            android:hint="@string/_0_00001"
+            android:inputType="numberDecimal"
+            tools:text="@string/_0_00001" />
+
+        <TextView
+            android:id="@+id/txt2"
+            style="@style/textViewTest"
+            android:layout_below="@id/param1"
+            android:text="@string/param2" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/param2"
+            style="@style/editTextTest"
+            android:layout_below="@id/txt2"
+            android:hint="@string/_0_00001"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/txt3"
+            style="@style/textViewTest"
+            android:layout_below="@id/param2"
+            android:text="@string/param3" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/param3"
+            style="@style/editTextTest"
+            android:layout_below="@id/txt3" />
+
+        <TextView
+            android:id="@+id/txt4"
+            style="@style/textViewTest"
+            android:layout_below="@id/param3"
+            android:text="@string/param4" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/param4"
+            style="@style/editTextTest"
+            android:layout_below="@id/txt4" />
+
+        <TextView
+            android:id="@+id/txt5"
+            style="@style/textViewTest"
+            android:layout_below="@id/param4"
+            android:text="@string/param5" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/param5"
+            style="@style/editTextTest"
+            android:layout_below="@id/txt5" />
+
+        <TextView
+            android:id="@+id/txt6"
+            style="@style/textViewTest"
+            android:layout_below="@id/param5"
+            android:text="@string/param6" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/param6"
+            style="@style/editTextTest"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt6"
+            android:hint="@string/_1"
+            android:imeOptions="actionDone" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCheck"
+            style="@style/mainButton"
+            android:layout_below="@id/param6"
+            android:layout_marginTop="@dimen/margin"
+            android:elevation="1dp"
+            android:enabled="false"
+            android:text="@string/result" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnMask"
+            style="@style/mainButton"
+            android:layout_alignTop="@id/btnCheck"
+            android:layout_alignBottom="@id/btnCheck"
+            android:elevation="2dp"
+            android:visibility="invisible" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignStart="@id/btnCheck"
+            android:layout_alignTop="@id/btnCheck"
+            android:layout_alignEnd="@id/btnCheck"
+            android:layout_alignBottom="@id/btnCheck"
+            android:elevation="3dp"
+            android:indeterminateTint="@color/white"
+            android:paddingVertical="4dp" />
+    </RelativeLayout>
+</ScrollView>
